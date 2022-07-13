@@ -24,14 +24,14 @@ public class TestController {
     @Autowired
     EmployeesRepository repo;
 
-    @PreAuthorize("hasAccessByTeamAndLevel(#team,4)")
+    @PreAuthorize("hasAccessByTeamAndLevel(#team,4)")  // method defined in the custom SecurityExpressionRoot
     @PostMapping(path = "/addEmployee/{team}", consumes = "application/json")
     public Employees add(@RequestBody Employees e, @PathVariable String team){
 
        repo.save(e);
         return e;
     }
-    @PreAuthorize("hasAnyAuthority('AAA_FULL_ACCESS','BBB_FULL_ACCESS')")
+    @PreAuthorize("hasAnyAuthority('AAA_FULL_ACCESS','BBB_FULL_ACCESS')")  // authorities defined in the custom MyPrincipal
     @GetMapping("/test1")
     public String test1(Principal user){
         return "test1 for : available if user has authorities 'AAA_FULL_ACCESS' or 'BBB_FULL_ACCESS';"+
