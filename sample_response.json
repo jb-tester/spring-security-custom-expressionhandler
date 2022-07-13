@@ -1,0 +1,87 @@
+{
+  "message": "test3: available for 1-level users",
+  "principal": {
+    "authorities": [
+      {
+        "authority": "FULL_ACCESS"
+      },
+      {
+        "authority": "AAA_FULL_ACCESS"
+      },
+      {
+        "authority": "BBB_FULL_ACCESS"
+      },
+      {
+        "authority": "AAA_USER_ACCESS"
+      },
+      {
+        "authority": "BBB_USER_ACCESS"
+      },
+      {
+        "authority": "BBB_FULL_ACCESS"
+      },
+      {
+        "authority": "BBB_USER_ACCESS"
+      },
+      {
+        "authority": "HR_ACCESS"
+      },
+      {
+        "authority": "BBB_USER_ACCESS"
+      }
+    ],
+    "details": {
+      "remoteAddress": "0:0:0:0:0:0:0:1",
+      "sessionId": "5277257619A9135961ED923579DB7CA9"
+    },
+    "authenticated": true,
+    "principal": {
+      "employee": {
+        "id": 9,
+        "firstname": "Maxim",
+        "secondname": "Maximov",
+        "team": "BBB",
+        "empRole": "admin",
+        "secLevel": 1,
+        "password": "password"
+      },
+      "enabled": true,
+      "password": "$2a$11$Hps4iHqgvRNKG4EmSp.CPeLIkZIs7dD3hQDzzAdykWScNdfA0C7dq",
+      "username": "Maxim_9",
+      "authorities": [
+        {
+          "authority": "FULL_ACCESS"
+        },
+        {
+          "authority": "AAA_FULL_ACCESS"
+        },
+        {
+          "authority": "BBB_FULL_ACCESS"
+        },
+        {
+          "authority": "AAA_USER_ACCESS"
+        },
+        {
+          "authority": "BBB_USER_ACCESS"
+        },
+        {
+          "authority": "BBB_FULL_ACCESS"
+        },
+        {
+          "authority": "BBB_USER_ACCESS"
+        },
+        {
+          "authority": "HR_ACCESS"
+        },
+        {
+          "authority": "BBB_USER_ACCESS"
+        }
+      ],
+      "accountNonExpired": true,
+      "credentialsNonExpired": true,
+      "accountNonLocked": true
+    },
+    "credentials": null,
+    "name": "Maxim_9"
+  }
+}
