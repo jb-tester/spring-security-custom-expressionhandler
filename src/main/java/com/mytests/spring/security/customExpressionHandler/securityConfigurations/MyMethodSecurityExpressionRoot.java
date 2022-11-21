@@ -17,7 +17,7 @@ public class MyMethodSecurityExpressionRoot
         Employee user = ((MyPrincipal) this.getPrincipal()).getEmployee();
         return user.getTeam().equals(team);
     }
-    public boolean hasFirstLevelSecurity(){
+    public Boolean hasFirstLevelSecurity(){
         Employee user = ((MyPrincipal) this.getPrincipal()).getEmployee();
         return user.getSecLevel()==1;
     }
